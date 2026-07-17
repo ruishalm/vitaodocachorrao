@@ -1,0 +1,49 @@
+.tableContainer {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.tableContainer h2 {
+  text-align: center;
+  color: var(--cor-primaria);
+  margin-bottom: 1rem;
+}
+
+.activityTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.activityTable th,
+.activityTable td {
+  border: 1px solid var(--cor-borda);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.activityTable th {
+  background-color: var(--cor-fundo);
+  font-weight: 600;
+  color: var(--cor-primaria);
+}
+
+.activityTable tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.activityTable tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.activityTable a {
+  color: var(--cor-secundaria);
+  text-decoration: underline;
+}
+
+.activityTable a:hover {
+  color: var(--cor-primaria);
+}

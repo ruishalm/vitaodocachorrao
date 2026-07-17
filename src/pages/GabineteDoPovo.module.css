@@ -1,0 +1,148 @@
+.contactPage {
+  padding: 2rem 1rem;
+}
+
+.contactPage h1 {
+  text-align: center;
+  color: var(--cor-primaria);
+  margin-bottom: 1.5rem;
+}
+
+.introText {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  color: var(--cor-texto-escuro);
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .contactContent {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contactFormSection,
+.contactInfoSection {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 2rem;
+}
+
+.contactFormSection h2,
+.contactInfoSection h2 {
+  color: var(--cor-secundaria);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contactForm .formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.contactForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--cor-texto-escuro);
+}
+
+.contactForm input[type="text"],
+.contactForm input[type="email"],
+.contactForm textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--cor-borda);
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Garante que padding não aumente a largura total */
+}
+
+.contactForm textarea {
+  resize: vertical;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: var(--cor-primaria);
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(13, 71, 161, 0.2);
+}
+
+.submitButton {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: var(--cor-secundaria);
+}
+
+.contactInfoSection h3 {
+  color: var(--cor-primaria);
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.contactInfoSection p {
+  color: var(--cor-texto-escuro);
+  line-height: 1.6;
+}
+
+.contactInfoSection a {
+  color: var(--cor-secundaria);
+  text-decoration: underline;
+}
+
+.contactInfoSection a:hover {
+  color: var(--cor-primaria);
+}
+
+.socialLinks {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center; /* Centraliza os links sociais */
+}
+
+.socialLinks li a {
+  display: inline-block;
+  background-color: var(--cor-fundo);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: var(--cor-primaria);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.socialLinks li a:hover {
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  text-decoration: none;
+}

@@ -1,0 +1,55 @@
+/* Reset básico e estilos globais */
+:root {
+  --cor-fundo: #f4f7f9;
+  --cor-texto-escuro: #333;
+  --cor-texto-claro: #f8f8f8;
+  --cor-primaria: #0d47a1; /* Azul escuro sóbrio */
+  --cor-secundaria: #1565c0; /* Azul um pouco mais claro */
+  --cor-destaque: #ffc107; /* Amarelo/Dourado para destaque */
+  --cor-borda: #e0e0e0;
+
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto-escuro);
+}
+
+main {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--cor-secundaria);
+}
+
+header, footer {
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--cor-primaria);
+}

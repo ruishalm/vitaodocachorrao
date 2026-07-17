@@ -1,0 +1,107 @@
+.pollCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 500px;
+}
+
+.pollCard.closed {
+  opacity: 0.7;
+  border: 1px dashed var(--cor-borda);
+}
+
+.pollQuestion {
+  color: var(--cor-primaria);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.pollDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--cor-texto-escuro);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.optionsList {
+  margin-bottom: 1.5rem;
+}
+
+.optionItem {
+  margin-bottom: 0.8rem;
+}
+
+.voteButton {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--cor-texto-escuro);
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.voteButton:hover {
+  background-color: #e6e6e6;
+  border-color: var(--cor-secundaria);
+}
+
+.voteButton.selected {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto-claro);
+  border-color: var(--cor-primaria);
+  font-weight: bold;
+}
+
+.optionResult {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  color: var(--cor-texto-escuro);
+}
+
+.progressBar {
+  flex-grow: 1;
+  height: 20px;
+  background-color: var(--cor-fundo);
+  border-radius: 3px;
+  margin-left: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: var(--cor-destaque);
+  border-radius: 3px;
+  transition: width 0.5s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5px;
+}
+
+.voteCount {
+  position: absolute;
+  right: 5px;
+  color: #333; /* Cor mais escura para o texto sobre o preenchimento */
+  font-weight: bold;
+  font-size: 0.85rem;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
+}
+
+.statusMessage {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 1.5rem;
+}
