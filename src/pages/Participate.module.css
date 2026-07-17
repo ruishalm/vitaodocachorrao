@@ -22,7 +22,7 @@
 .pollsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
+  gap: 3rem;
   justify-items: center;
   max-width: 1200px;
   margin: 0 auto;
