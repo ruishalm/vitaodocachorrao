@@ -1,0 +1,165 @@
+.homePage {
+  padding: 0; /* Remove padding padrão do main, hero section terá seu próprio */
+}
+
+.heroSection {
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3rem;
+}
+
+.heroContent {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.heroSection h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: var(--cor-texto-claro); /* Sobrescreve a cor primária global */
+}
+
+.heroSection p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.ctaButton {
+  display: inline-block;
+  background-color: var(--cor-destaque);
+  color: var(--cor-primaria);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ctaButton:hover {
+  background-color: #ffda6a;
+  transform: translateY(-2px);
+}
+
+.highlightsSection {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+
+.highlightsSection h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: var(--cor-primaria);
+}
+
+.highlightCards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 2rem;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: var(--cor-secundaria);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--cor-texto-escuro);
+}
+
+.cardLink {
+  color: var(--cor-primaria);
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.cardLink:hover {
+  text-decoration: underline;
+}
+
+.newsPreview {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+
+.newsPreview h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: var(--cor-primaria);
+}
+
+.newsItems {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.newsCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  padding: 1.5rem;
+  width: 350px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.newsCard:hover {
+  transform: translateY(-5px);
+}
+
+.newsCard h3 {
+  color: var(--cor-secundaria);
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+.newsCard p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  color: var(--cor-texto-escuro);
+}
+
+.readMore {
+  color: var(--cor-primaria);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,68 @@
+.projectListContainer {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.projectListContainer h2 {
+  text-align: center;
+  color: var(--cor-primaria);
+  margin-bottom: 1rem;
+}
+
+.projectList {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.projectItem {
+  border: 1px solid var(--cor-borda);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: #fcfcfc;
+}
+
+.projectItem h3 {
+  color: var(--cor-secundaria);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.projectItem p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.projectItem a {
+  color: var(--cor-secundaria);
+  text-decoration: underline;
+}
+
+.projectItem a:hover {
+  color: var(--cor-primaria);
+}
+
+/* Status styles */
+.proposed {
+  color: orange;
+  font-weight: bold;
+}
+
+.in_progress {
+  color: blue;
+  font-weight: bold;
+}
+
+.approved {
+  color: green;
+  font-weight: bold;
+}
+
+.rejected {
+  color: red;
+  font-weight: bold;
+}

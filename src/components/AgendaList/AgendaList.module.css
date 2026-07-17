@@ -1,0 +1,81 @@
+.agendaListContainer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.monthGroup {
+  margin-bottom: 3rem;
+}
+
+.monthTitle {
+  color: var(--cor-primaria);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.agendaItems {
+  list-style: none;
+  padding: 0;
+}
+
+.agendaItem {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  padding: 1.5rem;
+}
+
+.agendaDate {
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto-claro);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+
+.agendaDate .day {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.agendaDate .month {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.agendaDetails {
+  flex-grow: 1;
+}
+
+.agendaDetails h3 {
+  color: var(--cor-primaria);
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.agendaTime, .agendaLocation {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.3rem;
+}
+
+.agendaDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--cor-texto-escuro);
+  margin-top: 1rem;
+}
